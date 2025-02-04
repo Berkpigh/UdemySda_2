@@ -5,6 +5,7 @@ using sda.backend.minimalapi.ui;
 using Microsoft.EntityFrameworkCore;
 using sda.backend.minimalapi.Core.Auths.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
@@ -21,7 +22,37 @@ builder.Services.AddCors(options =>
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+#region Parametrage swagger + bearer dans swagger
+builder.Services.AddSwaggerGen(options =>
+{
+    //Définition
+    options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter a valid token",
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        BearerFormat = "JWT",
+        Scheme = "Bearer"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement()
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+#endregion
 
 string? connectionString = builder.Configuration.GetConnectionString("sda.backoffice.database");
 builder.Services.AddDbContext<GameDbContext>(options =>
@@ -41,8 +72,7 @@ builder.Services.AddIdentityCore<AuthenticationUser>(options =>
                 {
                     //options.SignIn.RequireConfirmedEmail = true;
                 })
-                .AddEntityFrameworkStores<AuthenticationDbContext>()
-                .AddApiEndpoints();
+                .AddEntityFrameworkStores<AuthenticationDbContext>();
 
 builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme, options =>
                     {
@@ -65,8 +95,6 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAllHeaders");
 
 app.UseHttpsRedirection();
-
-app.MapIdentityApi<AuthenticationUser>();
 
 app.MapGameEndpoints();
 
