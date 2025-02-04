@@ -16,7 +16,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
           "Swashbuckle.AspNetCore": "6.9.0",
-          "System.IdentityModel.Tokens.Jwt": "8.0.1",
+          "sda.backend.minimalapi.Core.Auths.IF": "1.0.0",
           "sda.backend.minimalapi.Core.Auths.Models": "1.0.0",
           "sda.backend.minimalapi.Core.Auths.Services": "1.0.0",
           "sda.backend.minimalapi.Core.Games.Interfaces": "1.0.0",
@@ -1987,6 +1987,15 @@
           }
         }
       },
+      "sda.backend.minimalapi.Core.Auths.IF/1.0.0": {
+        "dependencies": {
+          "System.IdentityModel.Tokens.Jwt": "8.0.1",
+          "sda.backend.minimalapi.Core.Auths.Models": "1.0.0"
+        },
+        "runtime": {
+          "sda.backend.minimalapi.Core.Auths.IF.dll": {}
+        }
+      },
       "sda.backend.minimalapi.Core.Auths.Models/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1"
@@ -1998,6 +2007,8 @@
       "sda.backend.minimalapi.Core.Auths.Services/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1",
+          "System.IdentityModel.Tokens.Jwt": "8.0.1",
+          "sda.backend.minimalapi.Core.Auths.IF": "1.0.0",
           "sda.backend.minimalapi.Core.Auths.Models": "1.0.0"
         },
         "runtime": {
@@ -3192,6 +3203,11 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "sda.backend.minimalapi.Core.Auths.IF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "sda.backend.minimalapi.Core.Auths.Models/1.0.0": {
       "type": "project",

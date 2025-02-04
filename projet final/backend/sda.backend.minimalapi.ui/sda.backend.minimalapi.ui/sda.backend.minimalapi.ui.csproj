@@ -18,10 +18,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\sda.backend.minimalapi.Core.Auths.IF\sda.backend.minimalapi.Core.Auths.IF.csproj" />
     <ProjectReference Include="..\sda.backend.minimalapi.Core.Auths.Models\sda.backend.minimalapi.Core.Auths.Models.csproj" />
     <ProjectReference Include="..\sda.backend.minimalapi.Core.Auths.Services\sda.backend.minimalapi.Core.Auths.Services.csproj" />
     <ProjectReference Include="..\sda.backend.minimalapi.Core.Games.Models\sda.backend.minimalapi.Core.Games.Models.csproj" />

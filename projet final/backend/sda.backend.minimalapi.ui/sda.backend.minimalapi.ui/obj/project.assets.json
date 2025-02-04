@@ -2836,6 +2836,20 @@
           }
         }
       },
+      "sda.backend.minimalapi.Core.Auths.IF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "System.IdentityModel.Tokens.Jwt": "8.0.1",
+          "sda.backend.minimalapi.Core.Auths.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/sda.backend.minimalapi.Core.Auths.IF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sda.backend.minimalapi.Core.Auths.IF.dll": {}
+        }
+      },
       "sda.backend.minimalapi.Core.Auths.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2854,6 +2868,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1",
+          "System.IdentityModel.Tokens.Jwt": "8.0.1",
+          "sda.backend.minimalapi.Core.Auths.IF": "1.0.0",
           "sda.backend.minimalapi.Core.Auths.Models": "1.0.0"
         },
         "compile": {
@@ -7960,6 +7976,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "sda.backend.minimalapi.Core.Auths.IF/1.0.0": {
+      "type": "project",
+      "path": "../sda.backend.minimalapi.Core.Auths.IF/sda.backend.minimalapi.Core.Auths.IF.csproj",
+      "msbuildProject": "../sda.backend.minimalapi.Core.Auths.IF/sda.backend.minimalapi.Core.Auths.IF.csproj"
+    },
     "sda.backend.minimalapi.Core.Auths.Models/1.0.0": {
       "type": "project",
       "path": "../sda.backend.minimalapi.Core.Auths.Models/sda.backend.minimalapi.Core.Auths.Models.csproj",
@@ -7996,7 +8017,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
       "Swashbuckle.AspNetCore >= 6.9.0",
-      "System.IdentityModel.Tokens.Jwt >= 8.0.1",
+      "sda.backend.minimalapi.Core.Auths.IF >= 1.0.0",
       "sda.backend.minimalapi.Core.Auths.Models >= 1.0.0",
       "sda.backend.minimalapi.Core.Auths.Services >= 1.0.0",
       "sda.backend.minimalapi.Core.Games.Interfaces >= 1.0.0",
@@ -8032,6 +8053,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Auths.IF\\sda.backend.minimalapi.Core.Auths.IF.csproj": {
+              "projectPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Auths.IF\\sda.backend.minimalapi.Core.Auths.IF.csproj"
+            },
             "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Auths.Models\\sda.backend.minimalapi.Core.Auths.Models.csproj": {
               "projectPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Auths.Models\\sda.backend.minimalapi.Core.Auths.Models.csproj"
             },
@@ -8098,10 +8122,6 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.9.0, )"
-          },
-          "System.IdentityModel.Tokens.Jwt": {
-            "target": "Package",
-            "version": "[8.0.1, )"
           }
         },
         "imports": [

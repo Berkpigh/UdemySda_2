@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using sda.backend.minimalapi.Core.Auths.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
+using sda.backend.minimalapi.Core.Auths.IF;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
@@ -79,6 +80,8 @@ builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerSche
 
                     });
 builder.Services.AddAuthorizationBuilder();
+
+builder.Services.AddScoped<ITokenService>();
 
 //builder.Services.AddScoped<IGetAllGameService, FakeInMemoryGetAllGameService>();
 builder.Services.AddScoped<IGetAllGameService, SqlServerGetAllGameService>();

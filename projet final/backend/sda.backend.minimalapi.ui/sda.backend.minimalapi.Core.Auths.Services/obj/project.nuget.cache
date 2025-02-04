@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lpkqQX0pqdv+UNyo1bpiA5TKUBosOykb+3gc/kFM9vVAAktRr975LpqJQNgOOHr6L/5c8oKgJmuzuOBG0wKlkQ==",
+  "dgSpecHash": "uARgzinzt7uM0a2rkEjPkK9lgEF52IP03oRTEaFMqf3qBkdD+mCgMNNkLY4ZszC0UTPjz/oDIZJeRikhbLu6wA==",
   "success": true,
   "projectFilePath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Auths.Services\\sda.backend.minimalapi.Core.Auths.Services.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,12 @@
     "C:\\Users\\pierr\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\pierr\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\pierr\\.nuget\\packages\\microsoft.extensions.options\\8.0.1\\microsoft.extensions.options.8.0.1.nupkg.sha512",
-    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.1\\microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.1\\microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
+    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.1\\microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
+    "C:\\Users\\pierr\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

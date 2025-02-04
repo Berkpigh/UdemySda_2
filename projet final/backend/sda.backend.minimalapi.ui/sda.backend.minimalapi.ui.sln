@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sda.backend.minimalapi.Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{ACEBC7C7-996F-4B88-8EAF-D65A2DCA8BDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sda.backend.minimalapi.Core.Auths.Models", "sda.backend.minimalapi.Core.Auths.Models\sda.backend.minimalapi.Core.Auths.Models.csproj", "{BE7B50BA-1E8D-44C6-9824-E2AE5ABFE947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sda.backend.minimalapi.Core.Auths.Models", "sda.backend.minimalapi.Core.Auths.Models\sda.backend.minimalapi.Core.Auths.Models.csproj", "{BE7B50BA-1E8D-44C6-9824-E2AE5ABFE947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sda.backend.minimalapi.Core.Auths.Services", "sda.backend.minimalapi.Core.Auths.Services\sda.backend.minimalapi.Core.Auths.Services.csproj", "{A8FA8236-9017-4824-86D4-2DD822ABD196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sda.backend.minimalapi.Core.Auths.Services", "sda.backend.minimalapi.Core.Auths.Services\sda.backend.minimalapi.Core.Auths.Services.csproj", "{A8FA8236-9017-4824-86D4-2DD822ABD196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sda.backend.minimalapi.Core.Auths.IF", "sda.backend.minimalapi.Core.Auths.IF\sda.backend.minimalapi.Core.Auths.IF.csproj", "{F333098D-4AF0-4B28-86A5-1F6A0DB3B2CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A8FA8236-9017-4824-86D4-2DD822ABD196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8FA8236-9017-4824-86D4-2DD822ABD196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8FA8236-9017-4824-86D4-2DD822ABD196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F333098D-4AF0-4B28-86A5-1F6A0DB3B2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F333098D-4AF0-4B28-86A5-1F6A0DB3B2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F333098D-4AF0-4B28-86A5-1F6A0DB3B2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F333098D-4AF0-4B28-86A5-1F6A0DB3B2CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{ACEBC7C7-996F-4B88-8EAF-D65A2DCA8BDE} = {DCCA55BE-6FBB-4BDB-9B60-919EC9B6E54E}
 		{BE7B50BA-1E8D-44C6-9824-E2AE5ABFE947} = {ACEBC7C7-996F-4B88-8EAF-D65A2DCA8BDE}
 		{A8FA8236-9017-4824-86D4-2DD822ABD196} = {ACEBC7C7-996F-4B88-8EAF-D65A2DCA8BDE}
+		{F333098D-4AF0-4B28-86A5-1F6A0DB3B2CD} = {ACEBC7C7-996F-4B88-8EAF-D65A2DCA8BDE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2AF67B5-4F4F-4A9B-8234-F597DA3F8EDC}

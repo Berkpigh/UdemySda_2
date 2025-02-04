@@ -272,3 +272,5 @@ I:\__UDEMY\React 18 avec Web Api dotnet 8 - full\TutorialSec4A18\projet final\ba
 I:\__UDEMY\React 18 avec Web Api dotnet 8 - full\TutorialSec4A18\projet final\backend\sda.backend.minimalapi.ui\sda.backend.minimalapi.ui\obj\Debug\net8.0\sda.backend.minimalapi.ui.genruntimeconfig.cache
 I:\__UDEMY\React 18 avec Web Api dotnet 8 - full\TutorialSec4A18\projet final\backend\sda.backend.minimalapi.ui\sda.backend.minimalapi.ui\obj\Debug\net8.0\ref\sda.backend.minimalapi.ui.dll
 I:\__UDEMY\React 18 avec Web Api dotnet 8 - full\TutorialSec4A18\projet final\backend\sda.backend.minimalapi.ui\sda.backend.minimalapi.ui\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+I:\__UDEMY\React 18 avec Web Api dotnet 8 - full\TutorialSec4A18\projet final\backend\sda.backend.minimalapi.ui\sda.backend.minimalapi.ui\bin\Debug\net8.0\sda.backend.minimalapi.Core.Auths.IF.dll
+I:\__UDEMY\React 18 avec Web Api dotnet 8 - full\TutorialSec4A18\projet final\backend\sda.backend.minimalapi.ui\sda.backend.minimalapi.ui\bin\Debug\net8.0\sda.backend.minimalapi.Core.Auths.IF.pdb
