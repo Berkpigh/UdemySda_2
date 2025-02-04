@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NKwGg1E+83iAQjUJZIaDAtNDfc2aodvudg3o9GcOsaY=",
+  "Source": "sda.backend.minimalapi.ui",
+  "BasePath": "_content/sda.backend.minimalapi.ui",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

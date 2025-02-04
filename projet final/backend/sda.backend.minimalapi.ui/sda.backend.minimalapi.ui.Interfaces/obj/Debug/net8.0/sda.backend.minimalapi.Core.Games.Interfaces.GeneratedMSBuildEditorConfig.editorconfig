@@ -1,0 +1,13 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = sda.backend.minimalapi.Core.Games.Interfaces
+build_property.ProjectDir = I:\__UDEMY\React 18 avec Web Api dotnet 8 - full\TutorialSec4A18\projet final\backend\sda.backend.minimalapi.ui\sda.backend.minimalapi.ui.Interfaces\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

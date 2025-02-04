@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui.Interfaces\\sda.backend.minimalapi.Core.Games.Interfaces.csproj": {}
+  },
+  "projects": {
+    "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Games.Models\\sda.backend.minimalapi.Core.Games.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Games.Models\\sda.backend.minimalapi.Core.Games.Models.csproj",
+        "projectName": "sda.backend.minimalapi.Core.Games.Models",
+        "projectPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Games.Models\\sda.backend.minimalapi.Core.Games.Models.csproj",
+        "packagesPath": "C:\\Users\\pierr\\.nuget\\packages\\",
+        "outputPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Games.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pierr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui.Interfaces\\sda.backend.minimalapi.Core.Games.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui.Interfaces\\sda.backend.minimalapi.Core.Games.Interfaces.csproj",
+        "projectName": "sda.backend.minimalapi.Core.Games.Interfaces",
+        "projectPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui.Interfaces\\sda.backend.minimalapi.Core.Games.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\pierr\\.nuget\\packages\\",
+        "outputPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pierr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Games.Models\\sda.backend.minimalapi.Core.Games.Models.csproj": {
+                "projectPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.Core.Games.Models\\sda.backend.minimalapi.Core.Games.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

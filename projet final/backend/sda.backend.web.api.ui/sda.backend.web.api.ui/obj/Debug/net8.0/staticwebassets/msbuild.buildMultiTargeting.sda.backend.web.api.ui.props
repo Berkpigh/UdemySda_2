@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\sda.backend.web.api.ui.props" />
+</Project>

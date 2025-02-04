@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "b09D5eWv38sLzPelaEVoCeUMI9lg5Qfehjc6wwfIm80=",
+  "Source": "sda.backend.web.api.ui",
+  "BasePath": "_content/sda.backend.web.api.ui",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\sda.backend.web.api.ui.props" />
+</Project>
