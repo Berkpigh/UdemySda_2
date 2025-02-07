@@ -123,5 +123,7 @@ app.MapGameEndpoints();
 
 app.MapCreationUserEndpoints();
 
+app.MapLoginUserEndpoints();
+
 app.Run();
 
