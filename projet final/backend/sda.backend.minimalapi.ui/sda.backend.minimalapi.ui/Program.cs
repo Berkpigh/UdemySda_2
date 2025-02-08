@@ -100,7 +100,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddAuthorizationBuilder();
+builder.Services.AddAuthorization();
 
 builder.Services.AddScoped<ITokenService, JwtTokenService>();
 //builder.Services.AddScoped<IGetAllGameService, FakeInMemoryGetAllGameService>();
@@ -108,7 +108,7 @@ builder.Services.AddScoped<IGetAllGameService, SqlServerGetAllGameService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline. use --> middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -118,6 +118,10 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAllHeaders");
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
+//
 
 app.MapGameEndpoints();
 
