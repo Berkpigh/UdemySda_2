@@ -1,5 +1,6 @@
 export interface User {
-    surname: string
+    userName: string;
+    email: string;
 }
 
 export interface LoginUser {
@@ -8,5 +9,5 @@ export interface LoginUser {
 }
 
 export interface AuthenticationUser extends User {
-    accessToken ?: string;
+    token ?: string;
 }

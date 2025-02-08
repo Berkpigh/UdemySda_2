@@ -23,7 +23,7 @@ public static class LoginUserEndpoints
                 if (passwordIsValid)
                 {
                     var token = tokenService.Create(user);
-                    result = TypedResults.Ok(new { Email = model.Login, Token = token });
+                    result = TypedResults.Ok(new { Email = model.Login, UserName = user.UserName, Token = token });
                 }
             }
 
