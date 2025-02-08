@@ -1,11 +1,12 @@
 import { AuthenticationUser, LoginUser } from "../models"
 
 // TODO : ALERT, delete from code !!!
-const url = 'https://localhost:7216/login/'
+const url = 'https://localhost:7216/api/Login/'
 
 type ApiReturnType = {
-    surname: string,
-    accessToken: string
+    userName: string,
+    email: string,
+    token: string
 }
 
 // type ApiReturnType = {
@@ -39,13 +40,14 @@ export async function postLogInByApi(user: LoginUser): Promise<AuthenticationUse
     return postRawApi(user)
 }
 
-// export async function fakePostLogInByApi(user: LoginUser): Promesse<AuthenticationUser> {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve({
-//                 surname: 'Legolas',
-//                 accessToken: '123456789'
-//             })
-//         }, 1000)
-//     })
-// }
+export async function fakePostLogInByApi(user: LoginUser): Promise<AuthenticationUser> {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({
+                userName: 'Legolas',
+                email: user.login,
+                token: '123456789'
+            })
+        }, 1000)
+    })
+}
