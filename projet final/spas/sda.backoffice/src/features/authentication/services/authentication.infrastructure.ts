@@ -27,7 +27,7 @@ async function postRawApi(user: LoginUser): Promise<ApiReturnType> {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            email: user.login,
+            login: user.login,
             password: user.password
         }),
       });
