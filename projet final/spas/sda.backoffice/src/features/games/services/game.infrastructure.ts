@@ -1,4 +1,4 @@
-import { getUserFromLocalDb } from "../../authentication/services/localstorage.infrastructure"
+import handler from "../../../core/infrastructures/https/http-handler"
 import { Games } from "../models"
 
 // TODO : ALERT, delete from code !!!
@@ -18,13 +18,16 @@ type ApiReturnType = GameApiReturnType[]
   * Return list of characters from api
  */
 async function getRawApi(): Promise<ApiReturnType> {
-    const userLocal = getUserFromLocalDb()
-    const response = await fetch(url, {
-        method: 'GET',
-        headers: {Authorization: `Bearer ${userLocal?.token}`} //interpolation
-    })
-    const result = await response.json() as ApiReturnType
-    return result
+    // const userLocal = getUserFromLocalDb()
+    // const response = await fetch(url, {
+    //     method: 'GET',
+    //     headers: {Authorization: `Bearer ${userLocal?.token}`} //interpolation
+    // })
+    // const result = await response.json() as ApiReturnType
+
+    const response = await handler.get<ApiReturnType>(url)
+
+    return response.data
 }
 
 async function getAllGamesByApiGeneric(rawApi: () => Promise<ApiReturnType>): Promise<Games> {
