@@ -15,6 +15,13 @@ export const CreateGame = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register('title', { required: true })} style = { titleStyle }></input>
                 { errors.title && <span style={{color: 'red'}}>*</span>}
+                <select {...register('videoGameId')}>
+                    <option value='7'>Final fantasy 7</option>
+                    <option value='8'>Final fantasy 8</option>
+                    <option value='9'>Final fantasy 9</option>
+                    <option value='10'>Final fantasy 10</option>
+                    <option value='16'>Final fantasy 16</option>
+                </select>
                 <button disabled={! isValid}>Sauvegarder</button>
             </form>
         </>
