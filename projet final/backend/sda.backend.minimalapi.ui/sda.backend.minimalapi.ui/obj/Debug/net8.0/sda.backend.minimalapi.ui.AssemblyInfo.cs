@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sda.backend.minimalapi.ui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3eb5c42242ea2023de58ec9c077f8bd7be636d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c431a866754fccf127a66fca45fbc0dec39054c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("sda.backend.minimalapi.ui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sda.backend.minimalapi.ui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
