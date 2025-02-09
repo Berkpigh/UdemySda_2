@@ -10,7 +10,9 @@ export interface Character {
  */
 export interface Game {
     id: number;
-    persoChoisi: Character;
+    titre: string;
+    videoGameId: number;
+    persoChoisi?: Character;
     success: boolean;
 };
 

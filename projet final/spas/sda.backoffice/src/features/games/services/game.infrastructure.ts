@@ -1,5 +1,5 @@
 import handler from "../../../core/infrastructures/https/http-handler"
-import { Games } from "../models"
+import { Games, Game } from "../models"
 
 // TODO : ALERT, delete from code !!!
 const url = 'https://localhost:7216/api/game/'
@@ -15,7 +15,7 @@ type GameApiReturnType = {
 type ApiReturnType = GameApiReturnType[]
 
 /**
-  * Return list of characters from api
+  * Return list of games from api
  */
 async function getRawApi(): Promise<ApiReturnType> {
     // const userLocal = getUserFromLocalDb()
@@ -33,9 +33,30 @@ async function getRawApi(): Promise<ApiReturnType> {
 async function getAllGamesByApiGeneric(rawApi: () => Promise<ApiReturnType>): Promise<Games> {
     const resultApi = await rawApi()
 
-    return resultApi.map(gameApi => ({id: gameApi._id,  persoChoisi: { surname: gameApi.character}, success: gameApi.success}))
+    return resultApi.map(gameApi => ({
+        id: gameApi._id,
+        titre: '',
+        videoGameId: 0,
+        persoChoisi: { surname: gameApi.character},
+         success: gameApi.success}
+        ))
 }
 
 export async function getAllGamesByApi(): Promise<Games> {
     return getAllGamesByApiGeneric(getRawApi)
 }
+// *** / *** *** / *** *** / *** *** / *** *** / *** *** / *** *** / *** *** / *** *** / ***
+/**
+  * Create one game from api
+ */
+export async function createOneGameByApiGeneric(item: Game): Promise<Game> {
+    const response = await handler.post<Game>(url, item)
+
+    return response.data
+}
+
+// export async function createOneGameByApi(): Promise<Game> {
+//     return createOneGameByApiGeneric(createOneApi)
+// }
+// *** / *** *** / *** *** / *** *** / *** *** / *** *** / *** *** / *** *** / *** *** / ***
+
