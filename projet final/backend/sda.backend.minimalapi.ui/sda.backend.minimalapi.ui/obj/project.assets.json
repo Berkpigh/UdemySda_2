@@ -2917,6 +2917,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.1",
+          "sda.backend.minimalapi.Core.Auths.Services": "1.0.0",
           "sda.backend.minimalapi.Core.Games.Interfaces": "1.0.0",
           "sda.backend.minimalapi.Core.Games.Models": "1.0.0"
         },

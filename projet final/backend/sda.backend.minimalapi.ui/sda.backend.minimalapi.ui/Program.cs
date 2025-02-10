@@ -106,6 +106,8 @@ builder.Services.AddScoped<ITokenService, JwtTokenService>();
 //builder.Services.AddScoped<IGetAllGameService, FakeInMemoryGetAllGameService>();
 builder.Services.AddScoped<IGetAllGameService, SqlServerGetAllGameService>();
 
+builder.Services.AddScoped<IPostGameService, SqlServerPostGameService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline. use --> middleware

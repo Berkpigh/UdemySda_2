@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.OpenApi;
 using sda.backend.minimalapi.Core.Games.Interfaces;
 using sda.backend.minimalapi.Core.Games.Models;
+using sda.backend.minimalapi.Core.Games.Services.Models;
 namespace sda.backend.minimalapi.ui;
 
 public static class GameEndpoints
@@ -30,13 +31,16 @@ public static class GameEndpoints
             return TypedResults.NoContent();
         })
         .WithName("UpdateGame")
+
         .WithOpenApi();
 
-        group.MapPost("/", (Game model) =>
+        group.MapPost("/", ( Game model, IPostGameService service) =>
         {
-            //return TypedResults.Created($"/api/Games/{model.ID}", model);
+            service.PostOne(model);
+            return TypedResults.Created($"/api/Games/{model.Id}", model);
         })
-        .WithName("CreateGame")
+        .WithName("CreatGame")
+        .RequireAuthorization()
         .WithOpenApi();
 
         group.MapDelete("/{id}", (int id) =>
