@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A76306-E86C-4586-BA30-23A67100FD69}|sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui.csproj|i:\\__udemy\\react 18 avec web api dotnet 8 - full\\tutorialsec4a18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui\\gameendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A76306-E86C-4586-BA30-23A67100FD69}|sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui.csproj|solutionrelative:sda.backend.minimalapi.ui\\gameendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +31,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameEndpoints.cs",
+              "DocumentMoniker": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui\\GameEndpoints.cs",
+              "RelativeDocumentMoniker": "sda.backend.minimalapi.ui\\GameEndpoints.cs",
+              "ToolTip": "I:\\__UDEMY\\React 18 avec Web Api dotnet 8 - full\\TutorialSec4A18\\projet final\\backend\\sda.backend.minimalapi.ui\\sda.backend.minimalapi.ui\\GameEndpoints.cs",
+              "RelativeToolTip": "sda.backend.minimalapi.ui\\GameEndpoints.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAUwCgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T14:53:55.098Z",
+              "EditorCaption": ""
             }
           ]
         }

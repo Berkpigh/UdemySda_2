@@ -61,13 +61,18 @@ builder.Services.AddSwaggerGen(options =>
 string? connectionString = builder.Configuration.GetConnectionString("sda.backoffice.database");
 builder.Services.AddDbContext<GameDbContext>(options =>
 {
-        options.UseSqlServer(connectionString);
+        options.UseSqlServer(connectionString, b => b.MigrationsAssembly("sda.backend.minimalapi.ui"));
 });
 
 builder.Services.AddDbContext<AuthenticationDbContext>(options =>
 {
     options.UseSqlServer(connectionString, b => b.MigrationsAssembly("sda.backend.minimalapi.ui"));
 });
+
+//builder.Services.AddDbContext<GameDbContext>(options =>
+//{
+//    options.UseSqlServer(connectionString, b => b.MigrationsAssembly("sda.backend.minimalapi.ui"));
+//});
 
 builder.Services.AddIdentityCore<AuthenticationUser>(options =>
                 {
