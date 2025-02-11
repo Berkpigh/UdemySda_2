@@ -34,9 +34,9 @@ public static class GameEndpoints
 
         .WithOpenApi();
 
-        group.MapPost("/", ( Game model, IPostGameService service) =>
+        group.MapPost("/", async ( Game model, IPostGameService service) =>
         {
-            service.PostOne(model);
+            await service.PostOneAsync(model);
             return TypedResults.Created($"/api/Games/{model.Id}", model);
         })
         .WithName("CreatGame")

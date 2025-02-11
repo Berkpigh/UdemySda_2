@@ -25,14 +25,15 @@ namespace sda.backend.minimalapi.Core.Games.Services
         #region Public methods
         public void PostOne(Game game)
         {
-            //var query = from item in _dbContext.Games
-            //            where item.Character != null
-            //            select item;
-            //return this._dbContext.Games.Where(item => item.Character != null).ToList();
-
             this._dbContext.Games.Add(game);
 
             this._dbContext.SaveChanges();
+        }
+        public Task PostOneAsync(Game game)
+        {
+            this._dbContext.Games.Add(game);
+
+            return this._dbContext.SaveChangesAsync();
         }
         #endregion
     }

@@ -7,4 +7,6 @@ namespace sda.backend.minimalapi.Core.Games.Interfaces;
 public interface IPostGameService
 {
     void PostOne(Game game);
+
+    Task PostOneAsync(Game game);
 }
