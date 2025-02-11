@@ -12,7 +12,7 @@ namespace sda.backend.minimalapi.Core.Games.Models
     public class Game
     {
         #region Properties
-        public decimal Id { get; set; }
+        public int Id { get; set; }
         public string Titre { get; set; } = string.Empty;
         public DateTime BeginDate { get; set; }
         public DateTime? EndDate { get; set; }

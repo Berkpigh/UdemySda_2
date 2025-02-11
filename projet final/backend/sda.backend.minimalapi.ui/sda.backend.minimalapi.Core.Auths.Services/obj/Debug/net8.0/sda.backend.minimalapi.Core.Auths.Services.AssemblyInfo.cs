@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sda.backend.minimalapi.Core.Auths.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a81dab56e09b599ee7ab0433818745f4300c14c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c37a135cf31eb13700022ee33c1b96570417a620")]
 [assembly: System.Reflection.AssemblyProductAttribute("sda.backend.minimalapi.Core.Auths.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sda.backend.minimalapi.Core.Auths.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

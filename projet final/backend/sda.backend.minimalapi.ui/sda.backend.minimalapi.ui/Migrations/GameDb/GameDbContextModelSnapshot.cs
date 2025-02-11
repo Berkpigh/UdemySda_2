@@ -24,8 +24,11 @@ namespace sda.backend.minimalapi.ui.Migrations.GameDb
 
             modelBuilder.Entity("sda.backend.minimalapi.Core.Games.Models.Game", b =>
                 {
-                    b.Property<decimal>("Id")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("BeginDate")
                         .HasColumnType("datetime2");

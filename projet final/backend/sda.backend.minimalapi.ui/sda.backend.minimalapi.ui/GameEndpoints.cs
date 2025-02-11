@@ -36,6 +36,7 @@ public static class GameEndpoints
 
         group.MapPost("/", async ( Game model, IPostGameService service) =>
         {
+            model.BeginDate = DateTime.Now;
             await service.PostOneAsync(model);
             return TypedResults.Created($"/api/Games/{model.Id}", model);
         })

@@ -29,4 +29,8 @@
     <ProjectReference Include="..\sda.backend.minimalapi.ui.Interfaces\sda.backend.minimalapi.Core.Games.Interfaces.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\GameDb\" />
+  </ItemGroup>
+
 </Project>
