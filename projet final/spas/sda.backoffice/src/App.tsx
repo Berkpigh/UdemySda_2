@@ -1,6 +1,7 @@
 import './App.css'
 import { MainRoutes } from './AppRoutes'
 import { AuthenticationContextProvider } from './features/authentication/components/AuthenticationProvider'
+import List from './learnings/memoLearn/MemoLearn'
 // import { UseMyContext } from './learnings/useContextLearn/UseMyContext'
 import { LayoutComponent } from './learnings/useChildrenLearn/LayoutComponent'
 import { MainMenu } from './shared/layout/MainMenu'
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <List></List>
       <AuthenticationContextProvider>
         <MainMenu></MainMenu>
         <LayoutComponent>
